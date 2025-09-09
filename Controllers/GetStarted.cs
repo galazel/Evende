@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace Evende.Controllers
 {
-    public partial class Login : UserControl
+    public partial class GetStarted : Form
     {
-        public Login()
+
+        public GetStarted()
         {
             InitializeComponent();
         }
-        private void back_login_label_LinkClicked(object sender, EventArgs e)
+        private void getStarted_button_Click(object sender, EventArgs e)
         {
-            LandingPageStates.panelName = "back";
-            ((LandingPage)this.ParentForm).SetSplitPanel();
+            this.Hide();
+            LandingPageStates.panelName = "landing";
+            new LandingPage().Show();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,29 +11,19 @@ using System.Windows.Forms;
 
 namespace Evende.Controllers
 {
-    public partial class landingPage_form : Form
+    public partial class LandingPage : Form
     {
-        public landingPage_form()
+        
+        public LandingPage()
         {
             InitializeComponent();
+            SetSplitPanel();
         }
-
-        private void login_button_Click(object sender, EventArgs e)
+        public void SetSplitPanel()
         {
-            landingPage_panel.Controls.Clear();
-            Login login = new Login();
-            login.Dock = DockStyle.Fill;
-            landingPage_panel.Controls.Add(login);
+           landingPage_split.Panel2.Controls.Clear();
+           landingPage_split.Panel2.Controls.Add(new LandingPageStates().SetStates(LandingPageStates.panelName));
         }
 
-        private void register_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void landingPage_panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

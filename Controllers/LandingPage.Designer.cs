@@ -1,6 +1,6 @@
 ﻿namespace Evende.Controllers
 {
-    partial class landingPage_form
+    partial class LandingPage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,84 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.login_button = new Guna.UI2.WinForms.Guna2Button();
-            this.register_button = new Guna.UI2.WinForms.Guna2Button();
-            this.evende_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.landingPage_panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.landingPage_panel.SuspendLayout();
+            this.landingPage_split = new Krypton.Toolkit.KryptonSplitContainer();
+            ((System.ComponentModel.ISupportInitialize)(this.landingPage_split)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.landingPage_split.Panel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.landingPage_split.Panel2)).BeginInit();
+            this.landingPage_split.SuspendLayout();
             this.SuspendLayout();
             // 
-            // login_button
+            // landingPage_split
             // 
-            this.login_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.login_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.login_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.login_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.login_button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(258, 241);
-            this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(180, 45);
-            this.login_button.TabIndex = 0;
-            this.login_button.Text = "Login";
-            this.login_button.Click += new System.EventHandler(this.login_button_Click);
+            this.landingPage_split.ContainerBackStyle = Krypton.Toolkit.PaletteBackStyle.ButtonGallery;
+            this.landingPage_split.Cursor = System.Windows.Forms.Cursors.Default;
+            this.landingPage_split.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.landingPage_split.Location = new System.Drawing.Point(0, 0);
+            this.landingPage_split.Size = new System.Drawing.Size(906, 541);
+            this.landingPage_split.SplitterDistance = 500;
+            this.landingPage_split.TabIndex = 11;
             // 
-            // register_button
-            // 
-            this.register_button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.register_button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.register_button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.register_button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.register_button.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.register_button.ForeColor = System.Drawing.Color.White;
-            this.register_button.Location = new System.Drawing.Point(258, 304);
-            this.register_button.Name = "register_button";
-            this.register_button.Size = new System.Drawing.Size(180, 45);
-            this.register_button.TabIndex = 1;
-            this.register_button.Text = "Register";
-            this.register_button.Click += new System.EventHandler(this.register_button_Click);
-            // 
-            // evende_label
-            // 
-            this.evende_label.BackColor = System.Drawing.Color.Transparent;
-            this.evende_label.Location = new System.Drawing.Point(325, 120);
-            this.evende_label.Name = "evende_label";
-            this.evende_label.Size = new System.Drawing.Size(40, 15);
-            this.evende_label.TabIndex = 2;
-            this.evende_label.Text = "Evende";
-            // 
-            // landingPage_panel
-            // 
-            this.landingPage_panel.BackColor = System.Drawing.Color.White;
-            this.landingPage_panel.Controls.Add(this.evende_label);
-            this.landingPage_panel.Controls.Add(this.register_button);
-            this.landingPage_panel.Controls.Add(this.login_button);
-            this.landingPage_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.landingPage_panel.Location = new System.Drawing.Point(0, 0);
-            this.landingPage_panel.Name = "landingPage_panel";
-            this.landingPage_panel.Size = new System.Drawing.Size(679, 450);
-            this.landingPage_panel.TabIndex = 3;
-            this.landingPage_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.landingPage_panel_Paint);
-            // 
-            // landingPage_form
+            // LandingPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 450);
-            this.Controls.Add(this.landingPage_panel);
-            this.Name = "landingPage_form";
+            this.ClientSize = new System.Drawing.Size(906, 541);
+            this.Controls.Add(this.landingPage_split);
+            this.Name = "LandingPage";
             this.Text = "LandingPage";
-            this.landingPage_panel.ResumeLayout(false);
-            this.landingPage_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.landingPage_split.Panel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.landingPage_split.Panel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.landingPage_split)).EndInit();
+            this.landingPage_split.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Button login_button;
-        private Guna.UI2.WinForms.Guna2Button register_button;
-        private Guna.UI2.WinForms.Guna2HtmlLabel evende_label;
-        private Guna.UI2.WinForms.Guna2Panel landingPage_panel;
+        private Krypton.Toolkit.KryptonSplitContainer landingPage_split;
     }
 }

@@ -17,7 +17,7 @@ namespace Evende
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new landingPage_form());
+            Application.Run(new GetStarted());
         }
     }
 }
